@@ -1,0 +1,23 @@
+spring:
+  main:
+    allow-circular-references: true
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://vgarden.cplpnkp6xrqb.eu-west-3.rds.amazonaws.com/vgarden
+    username: postgres
+    password: e8a48653851e28c69d0506508fb27fc5
+logging:
+  level:
+    formation:
+      sopra:
+        vgarden: DEBUG
+server:
+  servlet:
+    context-path: /api
